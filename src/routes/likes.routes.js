@@ -11,4 +11,5 @@ router.post('/:postId', auth, addLikeOnAPost)
 // route for deleting like by id 
 router.delete('/:id', auth, deletePostLike)
 
+// exporting the router 
 export default router
