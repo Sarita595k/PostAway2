@@ -34,6 +34,7 @@ export const registerUser = catchAsync(async (req, res, next) => {
     })
 })
 
+// login user controller
 export const loginUser = catchAsync(async (req, res, next) => {
     const { email, password } = req.body
     const userExist = await checkUserExist({ email })
