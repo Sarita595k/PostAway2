@@ -1,6 +1,7 @@
 import multer from 'multer'
 import path from 'path'
 import fs from 'fs'
+// for storage of file upload
 const storage = multer.diskStorage({
     destination: function (req, file, cb) {
         const uploadPath = 'uploads'
