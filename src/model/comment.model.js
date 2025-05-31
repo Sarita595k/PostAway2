@@ -1,10 +1,10 @@
 export const comments = []
 
 // to get all the comments 
-export const getAllComments = (data) => {
-    const filterComment = comments.filter(comment => comment.postId == data.id)
-    return filterComment
-}
+// export const getAllComments = (data) => {
+//     const filterComment = comments.filter(comment => comment.postId == data.id)
+//     return filterComment
+// }
 
 // to create comment
 export const createComment = (data) => {
