@@ -15,9 +15,9 @@ export const createComment = (data) => {
 }
 
 // check is comment exist or not
-export const commentExist = (data) => {
-    return comments.find(comment => comment.id == data.id)
-}
+// export const commentExist = (data) => {
+//     return comments.find(comment => comment.id == data.id)
+// }
 
 // to update a comment 
 export const updateComment = (data) => {
