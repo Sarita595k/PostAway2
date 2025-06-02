@@ -20,14 +20,14 @@ export const createComment = (data) => {
 // }
 
 // to update a comment 
-export const updateComment = (data) => {
-    const index = comments.findIndex(comment => comment.id == data.id)
-    if (index == -1) {
-        return null
-    }
-    comments[index] = { ...comments[index], ...data }
-    return comments[index]
-}
+// export const updateComment = (data) => {
+//     const index = comments.findIndex(comment => comment.id == data.id)
+//     if (index == -1) {
+//         return null
+//     }
+//     comments[index] = { ...comments[index], ...data }
+//     return comments[index]
+// }
 
 // to delete comment
 export const deleteComment = (data) => {
