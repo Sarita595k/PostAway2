@@ -6,6 +6,7 @@ import postsRouter from "./src/routes/posts.routes.js"
 import commentsRouter from "./src/routes/comments.routes.js"
 import likesRouter from './src/routes/likes.routes.js'
 import multer from 'multer'
+import connetToDb from './src/repository/mongodb.js'
 // import logger from './src/middleware/logger.js'
 import { errorMiddleware } from './src/middleware/errorHandling.js'
 // import swaggerui from "swagger-ui-express"
@@ -46,5 +47,6 @@ app.use((err, req, res, next) => {
 })
 
 app.listen(process.env.PORT, () => {
+    connetToDb()
     console.log("server is running")
 })
