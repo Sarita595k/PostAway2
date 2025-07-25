@@ -1,3 +1,8 @@
+import mongoose from "mongoose";
+
+const commentSchema = mongoose.Schema({
+
+})
 // export const comments = []
 
 // // to get all the comments
